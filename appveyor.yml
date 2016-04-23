@@ -1,0 +1,22 @@
+platform:
+- x86
+
+environment:
+  matrix:
+
+# VS 2015
+  - BUILD_TYPE: cmake
+    VS_VERSION: Visual Studio 14
+
+shallow_clone: true
+
+build_script:
+  - echo build_script
+  - echo "%platform% %VS_VERSION%"
+  - cmake .
+
+test_script:
+  - echo test_script
+
+deploy: off
+
