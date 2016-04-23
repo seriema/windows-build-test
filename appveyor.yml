@@ -14,9 +14,9 @@ build_script:
   - echo build_script
   - echo "%platform% %VS_VERSION%"
   - cmake .
+  - msbuild .\ALL_BUILD.vcxproj
 
 test_script:
   - echo test_script
 
 deploy: off
-
